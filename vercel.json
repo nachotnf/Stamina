@@ -1,0 +1,13 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "staminaentrenamiento.com" }],
+      "destination": "https://www.staminaentrenamiento.com/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/((?!.*\\..*).*)", "destination": "/index.html" }
+  ]
+}
