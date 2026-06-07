@@ -16,16 +16,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto pt-24 pb-28">
-        {/* Logo mark */}
-        <div className="flex justify-center mb-10 animate-fade-in">
-          <img
-            src="/logo-icono.png"
-            alt="STAMINA"
-            className="w-40 h-40 sm:w-52 sm:h-52 object-contain"
-            style={{ filter: 'invert(1)' }}
-          />
-        </div>
-
         {/* Pre-tag */}
         <div className="inline-flex items-center gap-3 mb-8 animate-fade-in">
           <span className="h-px w-6 bg-gold/50" />
@@ -33,15 +23,17 @@ export default function Hero() {
           <span className="h-px w-6 bg-gold/50" />
         </div>
 
-        {/* Main headline */}
-        <div className="animate-fade-in mb-3" style={{ animationDelay: '0.1s' }}>
-          <h1 className="font-display text-7xl sm:text-9xl lg:text-[11rem] tracking-[0.12em] leading-none gold-shimmer-text">
-            STAMINA
-          </h1>
-          <p className="text-white/25 tracking-[0.55em] uppercase text-xs sm:text-sm font-light mt-2">
-            Centro de Entrenamiento
-          </p>
-        </div>
+        {/* Main logo */}
+        <h1 className="animate-fade-in mb-3" style={{ animationDelay: '0.1s' }}>
+          <span className="sr-only">STAMINA Centro de Entrenamiento</span>
+          <img
+            src="/logo-principal.jpg"
+            alt=""
+            aria-hidden="true"
+            className="w-full max-w-[430px] sm:max-w-[560px] mx-auto object-contain"
+            style={{ filter: 'invert(1) contrast(1.08)' }}
+          />
+        </h1>
 
         {/* Subheadline */}
         <div className="animate-fade-up mt-10 mb-4" style={{ animationDelay: '0.2s', opacity: 0 }}>
