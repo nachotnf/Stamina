@@ -25,20 +25,6 @@ async function sendToSheets(data) {
   })
 }
 
-function buildWhatsAppUrl(data) {
-  const lines = [
-    'Hola, quiero información sobre STAMINA Training Center y reservar mi plaza.',
-    '',
-    `Nombre: ${data.name}`,
-    `Teléfono: ${data.phone}`,
-    data.email ? `Email: ${data.email}` : null,
-    data.goal ? `Objetivo: ${data.goal}` : null,
-    data.plan ? `Plan de interés: ${data.plan}` : null,
-  ].filter(Boolean)
-
-  return `https://wa.me/34614694322?text=${encodeURIComponent(lines.join('\n'))}`
-}
-
 export default function CTA() {
   const ref = useScrollAnimation()
   const [form, setForm] = useState({ name: '', phone: '', email: '', goal: '', plan: '' })
@@ -59,10 +45,6 @@ export default function CTA() {
     }
 
     setStatus('success')
-    const whatsappWindow = window.open(buildWhatsAppUrl(form), '_blank', 'noopener,noreferrer')
-    if (!whatsappWindow) {
-      window.location.href = buildWhatsAppUrl(form)
-    }
   }
 
   const reset = () => {
@@ -138,7 +120,7 @@ export default function CTA() {
 
             <div className="flex items-center gap-2 text-xs text-white/25 px-1">
               <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-              También puedes dejarnos tus datos y abriremos una conversación por WhatsApp.
+              También puedes dejarnos tus datos y te contactaremos lo antes posible.
             </div>
           </div>
 
@@ -169,7 +151,7 @@ export default function CTA() {
                   Formulario de contacto
                 </h3>
                 <p className="text-white/35 text-xs mb-6 tracking-wide">
-                  Rellena el formulario y abriremos WhatsApp con tu solicitud preparada.
+                  Rellena el formulario y te contactaremos para resolver tus dudas.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
@@ -260,7 +242,7 @@ export default function CTA() {
                     )}
                   </button>
                   <p className="text-white/20 text-[10px] tracking-wide text-center">
-                    Al enviar aceptas la política de privacidad. Se abrirá WhatsApp con tu solicitud preparada.
+                    Al enviar aceptas la política de privacidad.
                   </p>
                 </form>
               </>
