@@ -74,7 +74,7 @@ export default function Nav() {
             {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
           </button>
           <a
-            href="https://wa.me/34614694322?text=Hola,%20quiero%20información%20sobre%20STAMINA%20Training%20Center"
+            href="https://wa.me/34614694322"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm py-2.5 px-6"
@@ -124,7 +124,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="https://wa.me/34614694322?text=Hola,%20quiero%20información%20sobre%20STAMINA%20Training%20Center"
+            href="https://wa.me/34614694322"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm mt-4"

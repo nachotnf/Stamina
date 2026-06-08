@@ -109,7 +109,7 @@ export default function Facilities() {
             </p>
           </div>
           <a
-            href="https://wa.me/34614694322?text=Hola,%20me%20gustaría%20ver%20las%20instalaciones%20de%20STAMINA"
+            href="https://wa.me/34614694322"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary flex-shrink-0"

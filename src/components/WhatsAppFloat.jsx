@@ -29,7 +29,7 @@ export default function WhatsAppFloat() {
       )}
       {/* Button */}
       <a
-        href="https://wa.me/34614694322?text=Hola,%20quiero%20información%20sobre%20STAMINA%20Training%20Center"
+        href="https://wa.me/34614694322"
         target="_blank"
         rel="noopener noreferrer"
         className="w-14 h-14 bg-[#25D366] flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_4px_28px_rgba(37,211,102,0.6)] hover:scale-110 transition-all duration-300 rounded-full"

@@ -168,7 +168,7 @@ export default function Plans() {
               {/* CTA */}
               <div className="p-6 pt-0">
                 <a
-                  href={`https://wa.me/34614694322?text=Hola,%20me%20interesa%20el%20plan%20${encodeURIComponent(plan.name)}`}
+                  href="https://wa.me/34614694322"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`block text-center text-sm font-semibold py-3.5 rounded-xl tracking-wider uppercase transition-all duration-300 ${

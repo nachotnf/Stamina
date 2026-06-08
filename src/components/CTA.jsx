@@ -87,7 +87,7 @@ export default function CTA() {
                 La forma más rápida. Escríbenos por WhatsApp y te respondemos en menos de una hora.
               </p>
               <a
-                href="https://wa.me/34614694322?text=Hola,%20quiero%20información%20sobre%20STAMINA%20Training%20Center%20y%20reservar%20mi%20plaza"
+                href="https://wa.me/34614694322"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp w-full text-base"

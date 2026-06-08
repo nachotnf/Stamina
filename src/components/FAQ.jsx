@@ -106,7 +106,7 @@ export default function FAQ() {
             ¿Tienes alguna pregunta que no aparece aquí?
           </p>
           <a
-            href="https://wa.me/34614694322?text=Hola,%20tengo%20una%20pregunta%20sobre%20STAMINA"
+            href="https://wa.me/34614694322"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary text-sm"
